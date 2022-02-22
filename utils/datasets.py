@@ -681,7 +681,7 @@ def load_mosaic(self, index):
     # img4, labels4 = replicate(img4, labels4)  # replicate
 
     # Augment
-    img4, labels4, segments4 = copy_paste(img4, labels4, segments4, p=self.hyp['copy_paste'])
+    # img4, labels4, segments4 = copy_paste(img4, labels4, segments4, p=self.hyp['copy_paste'])
     img4, labels4 = random_perspective(img4, labels4, segments4,
                                        degrees=self.hyp['degrees'],
                                        translate=self.hyp['translate'],
